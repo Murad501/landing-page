@@ -37,7 +37,7 @@ export function PageNavbar() {
   ];
 
   return (
-    <Navbar className="mx-auto container px-6 py-3 shadow-none border-b-2 border-b-gray-300 rounded-none">
+    <Navbar className=" px-6 py-3 shadow-none border-b-2 border-b-gray-300 rounded-none">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
