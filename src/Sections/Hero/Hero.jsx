@@ -39,7 +39,7 @@ const Hero = () => {
   ];
 
   return (
-    <div id="hero z-0">
+    <div id="hero" className='z-0'>
       <Swiper
         pagination={{
           dynamicBullets: true,
@@ -58,7 +58,6 @@ const Hero = () => {
               alt={item.title}
               className="w-full h-full object-cover"
             />
-            {item.title}
           </SwiperSlide>
         ))}
       </Swiper>

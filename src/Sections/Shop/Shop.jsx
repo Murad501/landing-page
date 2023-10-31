@@ -31,7 +31,7 @@ const Shop = () => {
   ];
 
   return (
-    <section className="py-20 container mx-auto">
+    <section id="shop" className="pt-28 container mx-auto">
       <div className="mb-14">
         <Typography className="font-semibold uppercase text-center text-3xl text-blue-gray-700 mb-10">
           Shop

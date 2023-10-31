@@ -17,6 +17,7 @@ export function BlogCard({ blog }) {
         <img
           src={blog.image}
           alt="card-image"
+          className="h-full object-cover w-full"
         />
       </CardHeader>
       <CardBody>

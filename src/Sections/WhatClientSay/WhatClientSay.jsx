@@ -66,8 +66,11 @@ const WhatClientSay = () => {
   ];
 
   return (
-    <section className="py-10 container mx-auto">
+    <section id="testimonials" className="pt-28 container mx-auto">
       <div className="mb-14">
+        <Typography className="font-semibold uppercase text-center text-3xl text-blue-gray-700 mb-10">
+          Testimonials
+        </Typography>
         <Typography className="font-semibold uppercase text-center text-lg text-blue-gray-700 border-b pb-2 mb-3">
           WHAT MY CLIENTS SAY
         </Typography>
