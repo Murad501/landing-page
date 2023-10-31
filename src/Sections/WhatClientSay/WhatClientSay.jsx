@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 import { ClientSayCard } from "./ClientSayCard";
 
 const WhatClientSay = () => {
-  const  testimonials = [
+  const testimonials = [
     {
       name: "Alice Johnson",
       role: "Bride",
@@ -64,7 +64,6 @@ const WhatClientSay = () => {
       rating: 5,
     },
   ];
-  
 
   return (
     <section className="py-10 container mx-auto">
@@ -82,7 +81,6 @@ const WhatClientSay = () => {
         modules={[Autoplay]}
         spaceBetween={20}
         breakpoints={{
-
           200: {
             // width: 640,
             slidesPerView: 1,

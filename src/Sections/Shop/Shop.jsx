@@ -36,6 +36,14 @@ const Shop = () => {
         <Typography className="font-semibold uppercase text-center text-3xl text-blue-gray-700 mb-10">
           Shop
         </Typography>
+        <Typography className="font-semibold uppercase text-center text-lg text-blue-gray-700 border-b pb-2 mb-3">
+          Shop for Photographic Excellence
+        </Typography>
+        <Typography className="text-center font-medium text-blue-gray-700 max-w-5xl mx-auto">
+          Explore our shop for all your photography needs. We&apos;re here to enhance
+          your skills, not shoot you. Find the perfect gear and accessories to
+          elevate your photography game.
+        </Typography>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center items-center mx-auto">
         {products.map((product, idx) => (

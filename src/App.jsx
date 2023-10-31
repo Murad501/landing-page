@@ -9,6 +9,7 @@ import { Toaster } from "react-hot-toast";
 import OurClients from "./Sections/OurClients/OurClients";
 import Blogs from "./Sections/Blogs/Blogs";
 import Shop from "./Sections/Shop/Shop";
+import Gallery from "./Sections/Gallery/Gallery";
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <PageNavbar />
       <Hero/>
       <Shop/>
+      <Gallery/>
       <OurClients/>
       <Pricing />
       <WhatClientSay/>

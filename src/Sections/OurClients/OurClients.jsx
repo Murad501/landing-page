@@ -39,9 +39,17 @@ const OurClients = () => {
   ];
   return (
     <section className="pt-20 container mx-auto">
-      <Typography className="font-semibold uppercase text-center text-3xl text-blue-gray-700 mb-10">
-        Our Clients
-      </Typography>
+      <div className="mb-14">
+        <Typography className="font-semibold uppercase text-center text-3xl text-blue-gray-700 mb-10">
+          Our Clients
+        </Typography>
+        <Typography className="font-semibold uppercase text-center text-lg text-blue-gray-700 border-b pb-2 mb-3">
+          Trusted by Leading Brands
+        </Typography>
+        <Typography className="text-center font-medium text-blue-gray-700 max-w-5xl mx-auto">
+        Explore  of our valued clients. Each logo represents a unique partnership built on trust and exceptional photography. These logos are a testament to the moments we&apos;ve captured together.
+        </Typography>
+      </div>
       <Marquee autoFill={true} direction="right" pauseOnHover={true}>
         {clients.map((client, idx) => (
           <div key={idx} className="mx-10">
