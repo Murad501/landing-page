@@ -7,6 +7,7 @@ import WhatClientSay from "./Sections/WhatClientSay/WhatClientSay";
 import Contact from "./Sections/Contact/Contact";
 import { Toaster } from "react-hot-toast";
 import OurClients from "./Sections/OurClients/OurClients";
+import Blogs from "./Sections/Blogs/Blogs";
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <OurClients/>
       <Pricing />
       <WhatClientSay/>
+      <Blogs/>
       <Contact/>
       <Footer/>
       <Toaster/>

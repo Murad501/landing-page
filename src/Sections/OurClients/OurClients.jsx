@@ -38,7 +38,7 @@ const OurClients = () => {
     },
   ];
   return (
-    <section className="py-20 container mx-auto">
+    <section className="pt-20 container mx-auto">
       <Typography className="font-semibold uppercase text-center text-3xl text-blue-gray-700 mb-10">
         Our Clients
       </Typography>
