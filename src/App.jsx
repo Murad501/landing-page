@@ -6,6 +6,7 @@ import Pricing from "./Sections/Pricing/Pricing";
 import WhatClientSay from "./Sections/WhatClientSay/WhatClientSay";
 import Contact from "./Sections/Contact/Contact";
 import { Toaster } from "react-hot-toast";
+import OurClients from "./Sections/OurClients/OurClients";
 
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
     <div className="container mx-auto">
       <PageNavbar />
       <Hero/>
+      <OurClients/>
       <Pricing />
       <WhatClientSay/>
       <Contact/>
