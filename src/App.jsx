@@ -4,6 +4,8 @@ import Hero from "./Sections/Hero/Hero";
 import { Footer } from "./Sections/Footer/Footer";
 import Pricing from "./Sections/Pricing/Pricing";
 import WhatClientSay from "./Sections/WhatClientSay/WhatClientSay";
+import Contact from "./Sections/Contact/Contact";
+import { Toaster } from "react-hot-toast";
 
 
 export default function App() {
@@ -13,7 +15,9 @@ export default function App() {
       <Hero/>
       <Pricing />
       <WhatClientSay/>
+      <Contact/>
       <Footer/>
+      <Toaster/>
     </div>
   );
 }
