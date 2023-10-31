@@ -8,6 +8,7 @@ import Contact from "./Sections/Contact/Contact";
 import { Toaster } from "react-hot-toast";
 import OurClients from "./Sections/OurClients/OurClients";
 import Blogs from "./Sections/Blogs/Blogs";
+import Shop from "./Sections/Shop/Shop";
 
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
     <div className="container mx-auto">
       <PageNavbar />
       <Hero/>
+      <Shop/>
       <OurClients/>
       <Pricing />
       <WhatClientSay/>
