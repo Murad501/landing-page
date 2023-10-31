@@ -49,14 +49,10 @@ export function PageNavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium"
+                className="p-1 font-semibold cursor-pointer hover:text-blue-gray-700 transition-colors"
               >
-                <a
-                  href="#"
-                  className="flex items-center hover:text-blue-gray-700 transition-colors"
-                >
-                  {list.name}
-                </a>
+               
+                {list.name}
               </Typography>
             ))}
           </ul>
