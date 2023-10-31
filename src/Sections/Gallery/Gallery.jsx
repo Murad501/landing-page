@@ -67,6 +67,7 @@ const Gallery = () => {
               className={`${index === 0 && "lg:col-span-2"} ${
                 index === 9 && "lg:col-span-2"
               } cursor-pointer`}
+              data-aos="flip-right"
             >
               <PhotoView src={item.src}>
                 <img

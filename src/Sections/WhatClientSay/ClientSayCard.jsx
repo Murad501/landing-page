@@ -29,6 +29,7 @@ function StarIcon() {
 export function ClientSayCard({ testimonial }) {
   return (
     <Card
+    data-aos="zoom-out-down"
       color="transparent"
       shadow={false}
       className="w-full border rounded-sm p-5 py-0"

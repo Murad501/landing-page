@@ -12,7 +12,7 @@ import {
 
 export function BlogCard({ blog }) {
   return (
-    <Card className="mt-6 h-full">
+    <Card data-aos="flip-up" className="mt-6 h-full">
       <CardHeader color="blue-gray" className="relative h-56">
         <img
           src={blog.image}
@@ -22,7 +22,7 @@ export function BlogCard({ blog }) {
       </CardHeader>
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
-        {blog.title?.length > 30
+          {blog.title?.length > 30
             ? blog.title.slice(0, 30) + "..."
             : blog.title}
         </Typography>
@@ -34,7 +34,6 @@ export function BlogCard({ blog }) {
             ? blog.description.slice(0, 200) + "..."
             : blog.description}
         </Typography>
-        
       </CardBody>
       <CardFooter className="pt-0">
         <Button color="blue-gray">Read More</Button>

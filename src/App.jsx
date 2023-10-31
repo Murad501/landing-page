@@ -10,11 +10,12 @@ import OurClients from "./Sections/OurClients/OurClients";
 import Blogs from "./Sections/Blogs/Blogs";
 import Shop from "./Sections/Shop/Shop";
 import Gallery from "./Sections/Gallery/Gallery";
+import './index.css'
 
 
 export default function App() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-2">
       <PageNavbar />
       <Hero/>
       <Shop/>

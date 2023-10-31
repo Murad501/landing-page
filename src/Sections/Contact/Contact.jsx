@@ -5,7 +5,11 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-28 container mx-auto">
+    <section
+      data-aos="zoom-in"
+      id="contact"
+      className="py-28 container mx-auto"
+    >
       <Typography className="font-semibold uppercase text-center text-3xl text-blue-gray-700 mb-10">
         Contact
       </Typography>

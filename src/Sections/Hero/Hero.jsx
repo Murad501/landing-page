@@ -52,7 +52,7 @@ const Hero = () => {
         className="mySwiper max-h-[600px]"
       >
         {slideItems.map((item, idx) => (
-          <SwiperSlide key={idx} className="min-h-[500px]">
+          <SwiperSlide key={idx} className="max-h-[280px] sm:max-h-[600px] lg:min-h-[500px]">
             <img
               src={item.image}
               alt={item.title}

@@ -93,7 +93,7 @@ export function PageNavbar() {
         </IconButton>
       </div>
       {openNav ? (
-        <div className="text-black bg-white absolute right-0 p-2 lg:hidden border top-12 w-40 rounded-sm">
+        <div className="text-black bg-white absolute right-0 p-2 lg:hidden border top-[77px] w-60 rounded-sm">
           <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             {navList.map((list, idx) => (
               <Typography
@@ -101,7 +101,7 @@ export function PageNavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium  hover:text-blue-gray-700 transition-colors cursor-pointer"
+                className="px-5 py-1 font-medium  hover:text-blue-gray-700 transition-colors cursor-pointer"
               >
                 {list.name}
               </Typography>

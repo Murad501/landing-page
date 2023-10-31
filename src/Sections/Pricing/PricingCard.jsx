@@ -31,6 +31,7 @@ function CheckIcon() {
 export function PricingCard({data}) {
   return (
     <Card
+    data-aos="fade-left"
       variant="gradient"
       className={`w-full  p-8 mx-auto text-blue-gray-800 rounded-sm hover:scale-[1.02]  transition-all cursor-pointer border border-blue-gray-100 hover:bg-blue-gray-100 ${data?.id === 2 && "bg-blue-gray-100"}`}
     >
