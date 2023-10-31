@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import {
   Navbar,
-  Collapse,
   Typography,
   IconButton,
+
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { LuGalleryVerticalEnd } from "react-icons/lu";
 
 export function PageNavbar() {
   const [openNav, setOpenNav] = useState(false);
@@ -37,16 +38,9 @@ export function PageNavbar() {
   ];
 
   return (
-    <Navbar className=" px-6 py-3 shadow-none border-b-2 border-b-gray-300 rounded-none">
-      <div className="flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as="a"
-          href="#"
-          variant="h6"
-          className="mr-4 cursor-pointer py-1.5"
-        >
-          Material Tailwind
-        </Typography>
+    <Navbar className="container mx-auto px-6 py-5 shadow-none border-b-2 border-b-gray-300 rounded-none relative z-30">
+      <div className="flex items-center justify-between text-blue-gray-900 relative ">
+        <LuGalleryVerticalEnd className="text-4xl text-blue-gray-700" />
         <div className="hidden lg:block">
           <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             {navList.map((list, idx) => (
@@ -59,7 +53,7 @@ export function PageNavbar() {
               >
                 <a
                   href="#"
-                  className="flex items-center hover:text-blue-500 transition-colors"
+                  className="flex items-center hover:text-blue-gray-700 transition-colors"
                 >
                   {list.name}
                 </a>
@@ -80,7 +74,7 @@ export function PageNavbar() {
           )}
         </IconButton>
       </div>
-      <Collapse open={openNav}>
+      {openNav ? <div className="text-black bg-white absolute right-0 p-2 lg:hidden border top-12 w-40 rounded-sm">
         <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
           {navList.map((list, idx) => (
             <Typography
@@ -88,18 +82,14 @@ export function PageNavbar() {
               as="li"
               variant="small"
               color="blue-gray"
-              className="p-1 font-medium"
+              className="p-1 font-medium  hover:text-blue-gray-700 transition-colors cursor-pointer"
             >
-              <a
-                href="#"
-                className="flex items-center hover:text-blue-500 transition-colors"
-              >
-                {list.name}
-              </a>
+              {list.name}
+           
             </Typography>
           ))}
         </ul>
-      </Collapse>
+      </div> : ""}
     </Navbar>
   );
 }

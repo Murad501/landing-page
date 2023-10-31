@@ -39,7 +39,7 @@ const Hero = () => {
   ];
 
   return (
-    <div id="hero">
+    <div id="hero z-0">
       <Swiper
         pagination={{
           dynamicBullets: true,
