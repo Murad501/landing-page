@@ -67,13 +67,13 @@ const Gallery = () => {
               className={`${index === 0 && "lg:col-span-2"} ${
                 index === 9 && "lg:col-span-2"
               } cursor-pointer`}
-              data-aos="flip-right"
+              data-aos="flip-down"
             >
               <PhotoView src={item.src}>
                 <img
                   src={item.src}
                   alt="Image"
-                  className="h-full w-full object-cover"
+                  className="max-h-[300px] md:max-h-full h-full w-full object-cover"
                 />
               </PhotoView>
             </div>

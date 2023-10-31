@@ -17,7 +17,7 @@ AOS.init();
 
 export function Product({ product }) {
   return (
-    <Card  data-aos="fade-right">
+    <Card  data-aos="zoom-in-down">
       <CardHeader shadow={false} floated={false} className="h-96">
         <img
           src={product.image}

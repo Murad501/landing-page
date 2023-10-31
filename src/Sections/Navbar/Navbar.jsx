@@ -60,9 +60,12 @@ export function PageNavbar() {
   ];
 
   return (
-    <Navbar className="container mx-auto px-6 py-5 shadow-none border-b-2 border-b-gray-300 rounded-none z-30 sticky top-0">
+    <Navbar className="container mx-auto  px-6 py-5 shadow-none border-b-2 border-b-gray-300 rounded-none sticky top-0 z-30">
       <div className="flex items-center justify-between text-blue-gray-900 relative ">
-        <LuGalleryVerticalEnd className="text-4xl text-blue-gray-700" />
+        <LuGalleryVerticalEnd
+          onClick={() => navigateToSection("#hero")}
+          className="text-4xl text-blue-gray-700"
+        />
         <div className="hidden lg:block">
           <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             {navList.map((list, idx) => (
